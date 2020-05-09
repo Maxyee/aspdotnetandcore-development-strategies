@@ -41,5 +41,10 @@ namespace jwtauthcore.Controllers
             }
             return Ok(token);
         }
+
+        public IActionResult Refresh([FromBody] RefreshCred refreshCred)
+        {
+            return Ok();
+        }
     }
 }

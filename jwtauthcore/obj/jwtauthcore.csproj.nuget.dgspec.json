@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/home/julhaspc/Desktop/jwtauthcore/jwtauthcore/jwtauthcore.csproj": {}
+    "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj": {}
   },
   "projects": {
-    "/home/julhaspc/Desktop/jwtauthcore/jwtauthcore/jwtauthcore.csproj": {
+    "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/julhaspc/Desktop/jwtauthcore/jwtauthcore/jwtauthcore.csproj",
+        "projectUniqueName": "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj",
         "projectName": "jwtauthcore",
-        "projectPath": "/home/julhaspc/Desktop/jwtauthcore/jwtauthcore/jwtauthcore.csproj",
-        "packagesPath": "/home/julhaspc/.nuget/packages/",
-        "outputPath": "/home/julhaspc/Desktop/jwtauthcore/jwtauthcore/obj/",
+        "projectPath": "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj",
+        "packagesPath": "C:\\Users\\Mohon\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/julhaspc/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Mohon\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -47,6 +50,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.5.1, )"
+            },
+            "System.Security.Cryptography.Algorithms": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
@@ -67,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

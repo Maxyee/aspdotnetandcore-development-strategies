@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Text;
+using jwtauthcore.ResponseModel;
 
 namespace jwtauthcore
 {
@@ -17,11 +17,13 @@ namespace jwtauthcore
         };
 
         private readonly string key;
-        public JwtAuthenticationManager(string key)
+        private readonly IRefreshTokenGenerator refreshTokenGenerator;
+        public JwtAuthenticationManager(string key, IRefreshTokenGenerator refreshTokenGenerator)
         {
             this.key = key;
+            this.refreshTokenGenerator = refreshTokenGenerator;
         }
-        public string Authenticate(string username, string password)
+        public AuthenticationResponse Authenticate(string username, string password)
         {
             if(!users.Any(u => u.Key == username && u.Value == password))
             {
@@ -43,7 +45,12 @@ namespace jwtauthcore
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+            var refreshToken = refreshTokenGenerator.GenerateToken();
+            return new AuthenticationResponse 
+            { 
+                JwtToken =  tokenHandler.WriteToken(token),
+                RefreshToken = refreshToken
+            };
         }
     }
 }

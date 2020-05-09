@@ -48,7 +48,8 @@ namespace jwtauthcore
                 };
             });
 
-            services.AddSingleton<IJwtAuthenticationManager>(new JwtAuthenticationManager(key));
+            services.AddSingleton<IRefreshTokenGenerator, RefreshTokenGenerator>(); 
+            services.AddSingleton<IJwtAuthenticationManager>(x => new JwtAuthenticationManager());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
