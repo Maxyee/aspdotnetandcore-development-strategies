@@ -7,6 +7,6 @@ Task list and Link is given below, Just click and read the documentation for ful
 
 - [jwt authentication with microsoft nuget package manager resources](https://github.com/Maxyee/aspdotnetmvc-development-strategies/tree/master/jwtauthcore)
 
-- [jwt authentication with refresher token using asp dot net core]()
+- [jwt authentication with refresher token using asp dot net core](https://github.com/Maxyee/aspdotnetcore-development-strategies/tree/master/jwtauthrefreshercore)
 
 - [Dockerizing my ASP.NET Core application]()
