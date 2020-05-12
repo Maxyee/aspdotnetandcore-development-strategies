@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj": {}
+    "C:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj": {
+    "C:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj",
+        "projectUniqueName": "C:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj",
         "projectName": "jwtauthcore",
-        "projectPath": "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj",
+        "projectPath": "C:\\Users\\Mohon\\Desktop\\jwtauthcore\\jwtauthcore.csproj",
         "packagesPath": "C:\\Users\\Mohon\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Mohon\\Desktop\\jwtauthcore\\obj\\",
+        "outputPath": "C:\\Users\\Mohon\\Desktop\\jwtauthcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -38,6 +38,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

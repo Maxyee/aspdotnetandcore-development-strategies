@@ -8,7 +8,7 @@ namespace jwtauthcore.Controllers
 
     [Route("api/controller")]
     [ApiController]
-    public class NameController : ControllerBase
+    public class AuthController : ControllerBase
     {
         [HttpGet]
         public IEnumerable<string> Get()
