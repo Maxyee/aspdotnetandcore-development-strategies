@@ -1,8 +1,11 @@
+using System;
 using jwtauthcore.Interface;
 using System.Collections.Generic;
 using System.Linq;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 
 namespace jwtauthcore.Logics
 {
@@ -29,8 +32,7 @@ namespace jwtauthcore.Logics
             this.key = key;
         }
 
-
-        public Authentication(string username, string password)
+        public string Authenticate(string username, string password)
         {
             // if there is no user and password matched from the dictionary
             // then I will return null
@@ -59,6 +61,23 @@ namespace jwtauthcore.Logics
             // thats why I am using this procedure.
             var tokenKey = Encoding.ASCII.GetBytes(key); // called the 'using System.Text;' for recognisiing the 'Encoding'
 
+
+            // lets create the token descriptor
+            // SecurityTokenDescriptor this class should load from this Library 'using Microsoft.IdentityModel.Tokens;'
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, username)
+                }),    //ClaimsIdentity this class should load from 'using System.Security.Claims;'
+                Expires = DateTime.UtcNow.AddHours(1), // our token will expire with in 1 hour
+                SigningCredentials = 
+                    new SigningCredentials(
+                        new SymmetricSecurityKey(tokenKey),
+                        SecurityAlgorithms.HmacSha256Signature)  // called the sha Algorithm for making token
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
     }
 }
