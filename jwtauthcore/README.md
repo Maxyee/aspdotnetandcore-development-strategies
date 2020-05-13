@@ -138,5 +138,24 @@ public void ConfigureServices(IServiceCollection services)
 
 ### Testing with PostMan
 
+Before Tesing with PostMan, we need to run our project. Without running the project we can not make the request to our local project.
+However, for runnign this project we need to run the below command from our bash
 
+`dotnet run`
+
+After running this command we will see that our project is running on our local machine with a project port number, for my machine it 
+was running on the port `https://localhost:5001/`
+
+Another thing, from bash we can understand in which port our project is running.
+
+Now I will share two postman request. One request will be a POST request with `username` and `password` . if this two credentials are
+valid then it will give us a bearer Token
+
+picture link 1
+
+
+After getting the token, we will use that token into this GET request. As a result, it will give us the value of that get request.
+if the token is invalid then the get request will not give us any value.
+
+picture link 2
 
