@@ -159,5 +159,5 @@ After getting the token, we will use that token into this GET request. As a resu
 if the token is invalid then the get request will not give us any value.
 
 `https://localhost:5001/api/auth`
-![alt text](https://github.com/Maxyee/aspdotnetcore-development-strategies/blob/master/jwtauthcore/Screenshots/getValue.png)
+![alt text](https://github.com/Maxyee/aspdotnetcore-development-strategies/blob/master/jwtauthcore/Screenshots/getvaluefix.png)
 
