@@ -151,11 +151,13 @@ Another thing, from bash we can understand in which port our project is running.
 Now I will share two postman request. One request will be a POST request with `username` and `password` . if this two credentials are
 valid then it will give us a bearer Token
 
-picture link 1
+`https://localhost:5001/api/auth/authenticate`
+![alt text](https://github.com/Maxyee/aspdotnetcore-development-strategies/blob/master/jwtauthcore/Screenshots/authenticateRequest.png)
 
 
 After getting the token, we will use that token into this GET request. As a result, it will give us the value of that get request.
 if the token is invalid then the get request will not give us any value.
 
-picture link 2
+`https://localhost:5001/api/auth`
+![alt text](https://github.com/Maxyee/aspdotnetcore-development-strategies/blob/master/jwtauthcore/Screenshots/getValue.png)
 
