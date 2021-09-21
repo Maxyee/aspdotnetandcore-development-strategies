@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WhSa1IxIj8ZW/FqdsmmwxpbM2yl1qbbGQtWnzRl2vThK4lneINkdTJ+vLdb8asVhQYb0vOh6dwFxWtXNmQy7ug==",
+  "success": true,
+  "projectFilePath": "/home/julhas/Desktop/aspdotnetcore-development-strategies/cqrs-event-sourcing-rabbitmq-mongodb/RabbitMq.Consumer/RabbitMq.Consumer.csproj",
+  "expectedPackageFiles": [
+    "/home/julhas/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
+    "/home/julhas/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/home/julhas/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
