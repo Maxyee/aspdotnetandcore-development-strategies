@@ -1,0 +1,32 @@
+// At first install mongoDb in your system ---->
+
+1. open terminal and write 'mongo'
+
+// Run this below command to the ---->
+
+2. sudo rm /var/lib/mongodb/mongod.lock
+3. sudo service mongod restart
+
+
+// Running mongo ---->
+4. run command 'mongo'
+
+// ------------------------ now mongo command -------------------------------
+
+- show dbs;
+it will show all the database
+
+-
+
+
+// --------------------- mongoDB GUI -------------------------
+- I need to install Robo3T for my mongoDB GUI interface.
+
+a. at first download the robo3T for linux
+b. then we have to extract it
+c. then go to the bin folder and then run the robo3t
+
+
+//------------------- Follow this website for creating Database ----------------------
+
+- https://www.mongodb.com/basics/create-database
