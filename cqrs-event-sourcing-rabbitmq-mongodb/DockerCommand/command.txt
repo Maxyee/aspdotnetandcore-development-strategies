@@ -1,4 +1,10 @@
+// Check and make a rabbitmq microservice using docker
+
 1. docker --version
 2. docker images
 3. docker run -d --hostname my-rabbit --name ecomm-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 4. docker logs -f 24a
+
+// How to start previously use microservice
+1. docker images
+2. 

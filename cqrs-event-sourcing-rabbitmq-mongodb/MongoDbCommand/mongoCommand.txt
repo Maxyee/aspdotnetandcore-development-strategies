@@ -13,10 +13,16 @@
 
 // ------------------------ now mongo command -------------------------------
 
-- show dbs;
-it will show all the database
 
--
+//it will show all the database
+- show dbs;
+
+
+// this command will select the database
+- use databasename
+
+// this will get all the collection of that database
+- db.databasename.find()
 
 
 // --------------------- mongoDB GUI -------------------------
